@@ -12,6 +12,6 @@ document.getElementById('LoginButton').addEventListener('click', function () {
 
     document.getElementById('logIn').addEventListener('click', function () {
 
-        window.location.href = "index.html"
+        window.location.href = "cart.html"
     })
 })

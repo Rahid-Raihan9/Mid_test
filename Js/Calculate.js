@@ -68,4 +68,7 @@ document.getElementById('msiDeductButton').addEventListener('click', function ()
 
 })
 
+document.getElementById('confirmButton').addEventListener('click', function () {
+    window.location.href = "Order confirm.html";
+})
 

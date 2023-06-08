@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/IndexAssignment.css">
-    <title>Login page</title>
+    <link rel="stylesheet" href="CSS/IndexAssignment.css">
+    <title>eExpress</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-color shadow-sm p-3 mb-5 fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="IndexAssigment.html"> <img src="laptop/1085.png" width="100px"
+            <a class="navbar-brand" href="IndexAssigment.html"> <img src="Laptop/1085.png" width="100px"
                     alt="Company_logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="IndexAssigment.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="Index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About us</a>
@@ -31,7 +31,7 @@
                         <a class="nav-link" href="#">Contact Us </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Login</a>
+                        <a class="nav-link" href="Login.html">Login</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -41,42 +41,97 @@
             </div>
         </div>
     </nav>
-    <section class="py-3 mt-5 ">
-        <div class="container card">
-            <h1 class="text-center pt-5 pb-2">Connect With Us</h1>
-            <div class="row pb-5 justify-content-center align-items-center">
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img src="laptop/5500661.jpg" class="w-100" alt="login">
+    <!-- Banner_Section -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner mt-2 p-0">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="Laptop/6911706.jpg" class="d-block w-100 h-90" alt="Laptop">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="Laptop/6911706.jpg" class="d-block w-100" alt="Laptop">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Laptop/6911706.jpg" class="d-block w-100" alt="Laptop">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <section class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <h4>Laptop</h4>
+            <P class="text-warning">See All</P>
+        </div>
+        <div class="row row-cols-1  row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img class="img-fluid" src="Laptop/vivobook-x515ka-slate-grey-01-228x228.webp" class="card-img-top"
+                        alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Asus Vivobook X515KA Celeron N4500 15.6" FHD Laptop</h5>
+                        <p class="card-text">Processor: Intel Celeron N4500 (4M Cache, 1.10 GHz up to 2.80 GHz)
+                            RAM: 4GB DDR4 RAM, Storage: 1TB 5400RPM HDD
+                            Display: 15.6" FHD (1920x1080)
+                            Features: Built-in microphone, Type-C. With 512Gb of SSD and expandle ram up to 32GB</p>
+                        <h5 class="card-title text-secondary">799$</h5>
+                        <a href="login.html" class="nav-link"><button id="logIn"
+                                class="text-white bg-black rounded py-1 px-2">Buy
+                                Now</button></a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 ">
-                    <form class="row g-3">
-                        <div class="form-outline mb-4">
-                            <input type="email" id="UserEmail" class="form-control form-control-lg"
-                                placeholder="Enter a valid email address" />
-                            <label class="form-label" for="form3Example3"></label>
-                        </div>
-                        <div class="form-outline mb-3">
-                            <input type="password" id="iPassword" class="form-control form-control-lg"
-                                placeholder="Enter password" />
-                            <label class="form-label" for="form3Example4"></label>
-                        </div>
-
-                        <div class="form-outline mb-3">
-                            <input type="password" id="form3Example4" class="form-control form-control-lg"
-                                placeholder="Confirm password" />
-                            <label class="form-label" for="inputPasswordConfirm"></label>
-                        </div>
-
-                    </form>
-                    <div class="col-12 pt-4">
-                        <button type="button" id="LoginButton" class="btn btn-primary btn-lg"
-                            style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img class="img-fluid" src="Laptop/ideapad-slim-3i-01-228x228.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lenovo IdeaPad Slim 3i Intel Celeron N4020 256GB SSD 15.6" HD Laptop
+                        </h5>
+                        <p class="card-text">Processor: Intel Celeron N4020 (4M Cache, 1.10 GHz up to 2.80 GHz)
+                            Ram: 4GB DDR4, Storage: 256GB SSD
+                            Display: 15.6" HD (1366 x 768)
+                            Features: High Definition Audio, HD 720p Webcam</p>
+                        <h5 class="card-title text-secondary">899$</h5>
+                        <a href="login.html" class="nav-link"><button id="logIn"
+                                class="text-white bg-black rounded py-1 px-2">Buy
+                                Now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img class="img-fluid" src="Laptop/gf63-thin-11uc-01-228x228.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">MSI GF63 THIN 11UC Core i7 11th Gen 1TB SSD RTX 3050 Max-Q 4GB Graphics
+                            15.6" FHD 144Hz Gaming Laptop</h5>
+                        <p class="card-text">Intel Core i7-11800H Processor (24M Cache, 2.30 GHz up to 4.60 GHz)
+                            8GB DDR4 3200MHz RAM
+                            1TB NVMe PCIe Gen3x4 SSD
+                            NVIDIA RTX 3050 Max-Q 4GB Graphics</p>
+                        <h5 class="card-title text-secondary">1999$</h5>
+                        <a href="login.html" class="nav-link"><button id="logIn"
+                                class="text-white bg-black rounded py-1 px-2">Buy
+                                Now</button></a>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
     <footer class="py-md-5">
         <div class="container">
@@ -110,7 +165,7 @@
 
     </footer>
 
-    <script src="js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
