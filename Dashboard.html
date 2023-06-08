@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Class-23_Dashboad</title>
+</head>
+
+<body>
+    <div class=" middle flex items-center min-h-screen">
+        <section class="p-10 bg-green-200 mx-auto w-2/4 space-y-5 ">
+            <h2 class="text-xl text-center font-bold font-mono"> Wellcome to our dashboard</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-amber-100 p-5 text-black rounded-lg space-y-5">
+                    <h4 class=" text-2xl">Deposite</h4>
+                    <h2 class="text-4xl">$<span id="dtotal">000</span></h2>
+
+                </div>
+                <div class="bg-indigo-300 p-5 text-black rounded-lg space-y-5">
+                    <h4 class=" text-2xl">Withdraw</h4>
+                    <h2 class="text-4xl">$<span id="wtotal">000</span></h2>
+
+                </div>
+                <div class="bg-sky-300 p-5 text-black rounded-lg space-y-5">
+                    <h4 class=" text-2xl">Balance</h4>
+                    <h2 class="text-4xl">$<span id="btotal">000</span></h2>
+
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-gray-500 p-5 rounded-lg space-y-5 ">
+                    <h3 class="text-white text-2xl">Please Deposite</h3>
+                    <input class="w-full py-2 px-2 rounded-lg" type=" number" placeholder="Enter your Ammount"
+                        id="DepositeInput" required>
+                    <button id="DepositeButton"
+                        class="bg-amber-100 px-3 py-2 rounded-lg text-black w-2/4">Submit</button>
+                </div>
+                <div class="bg-lime-500 p-5 rounded-lg space-y-5 ">
+                    <h3 class="text-white text-2xl">Please Withdraw</h3>
+                    <input class="w-full py-2 px-2 rounded-lg" type=" number" placeholder="Enter your Ammount"
+                        id="withdrawInput" required>
+                    <button id="withdrawButton"
+                        class="bg-amber-100 px-3 py-2 rounded-lg text-black w-2/4">Submit</button>
+                </div>
+            </div>
+            <script src="Dashboard.js"></script>
+            <!-- <script>
+                <!-- document.getElementById('DepositeButton').addEventListener('click', function () {
+                    const NewDeposite = document.getElementById('DepositeInput');
+                    const Depositinputs = NewDeposite.value;
+                    converDepositinputs = parseFloat(Depositinputs);
+                    console.log(converDepositinputs)
+
+                })
+
+            </script> -->
+</body>
+
+</html>

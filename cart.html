@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/IndexAssignment.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-color shadow-sm p-3 mb-5 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="IndexAssigment.html"> <img src="laptop/1085.png" width="100px"
+                    alt="Company_logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="IndexAssigment.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success bg" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="Remove">
+        <section class="container my-5">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <h4>Laptop</h4>
+                <P class="text-warning">See All</P>
+            </div>
+            <div class="row row-cols-1  row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="img-fluid" src="Laptop/vivobook-x515ka-slate-grey-01-228x228.webp"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Asus Vivobook X515KA Celeron N4500 15.6" 256GB SSD FHD Laptop</h5>
+                            <h5 class="card-title text-secondary">799$</h5>
+                            <h1 id="Asus_Total" class="col display-6">0 $</h1>
+                            <button id="increaseButton" class="text-white bg-black rounded py-1 px-2">+</button><input
+                                class="text-center" type="number" id="Asus_Number" value="1" min="1">
+                            <button id="DeductButton" class="text-white text-bg-danger rounded py-1 px-2 ">-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="img-fluid" src="Laptop/ideapad-slim-3i-01-228x228.webp" class="card-img-top"
+                            alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lenovo IdeaPad Slim 3i Intel Celeron N4020 256GB SSD 256GB SSD 15.6"
+                                HD
+                                Laptop
+                            </h5>
+                            <h5 class="card-title text-secondary">899$</h5>
+                            <h1 id="Lenevo_Total" class="col display-6">0 $</h1>
+                            <button id="lenevoincreaseButton"
+                                class="text-white bg-black rounded py-1 px-2">+</button><input class="text-center"
+                                type="number" id="Lenevo_Number" value="1" min="1">
+                            <button id="LenevoDeductButton"
+                                class="text-white text-bg-danger rounded py-1 px-2 ">-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="img-fluid" src="Laptop/gf63-thin-11uc-01-228x228.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">MSI Core i7 11th Gen 1TB SSD RTX 3050 Max-Q 4GB Graphics
+                                15.6" FHD 144Hz Gaming Laptop</h5>
+                            <h5 class="card-title text-secondary">1999$</h5>
+                            <h1 id="msi_Total" class="col display-6">0 $</h1>
+                            <button id="msiincreaseButton"
+                                class="text-white bg-black rounded py-1 px-2">+</button><input class="text-center"
+                                type="number" id="msi_Number" value="1" min="1">
+                            <button id="msiDeductButton" class="text-white text-bg-danger rounded py-1 px-2 ">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </section>
+    <div class="container-fluid text-center mt-5 card">
+        <div class="row row-cols-4">
+            <h1 class="col display-6">Subtotal</h1>
+            <h1 class="col display-6">Tax (5%)</h1>
+            <h1 class="col display-6">Shipping</h1>
+            <h1 class="col display-6">Grand Total</h1>
+        </div>
+    </div>
+    <div class="container-fluid text-center card mt-1 ">
+        <div class="row row-cols-4">
+            <h1 id="Sub_Total" class="col display-6">0 $</h1>
+            <h1 id="tax_Total" class="col display-6">0 $</h1>
+            <h1 id="shipping_Total" class="col display-6">0 $</h1>
+            <h1 id="grand_Total" class="col display-6">0 $</h1>
+        </div>
+    </div>
+    <div class="text-center m-2">
+        <div class=" card-body">
+
+            <button type="button" class="btn btn-warning btn-block btn-lg">Place
+                Your
+                Order</button>
+        </div>
+    </div>
+    </div>
+    </section>
+    <footer class="py-md-5">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-md-3 text-white">
+                    <h2 class="mb-5 mb-md-0"> <img src="Laptop/1085.png" width="200px" alt=""> </h2>
+                </div>
+                <div class="col-12 col-md-3 footer-tems">
+                    <li><a class="fw-semibold" href="#"> ABOUT US </a></li>
+                    <li><a class="" href="#"> Emi Policy </a></li>
+                    <li><a class="" href="#"> Privacy Policy </a></li>
+                    <li><a class="" href="#"> Brands</a></li>
+
+                </div>
+
+                <div class="col-12 col-md-3 footer-tems">
+                    <li><a class="fw-semibold" href="#"> Online Delivery </a></li>
+                    <li><a class="" href="#"> Refund & Returnd Policy </a></li>
+                    <li><a class="" href="#"> Contact Us </a></li>
+
+                </div>
+
+                <div class="col-12 col-md-3 footer-tems">
+                    <li><a class="fw-semibold" href="#">eExpress Ltd</a></li>
+                    <p>Head Office: 28 Kazi Nazrul Islam Ave,Navana Zohura Square, Dhaka 1000</p>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">rahidraihan0@gmail.com</a></li>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="/Js/Calculate.js"></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
